@@ -78,7 +78,7 @@ ggplot(df) +
   annotate("text", x = 19, y = 1994, hjust = 1, vjust = 1, label = "?", size = 15, color = "seashell3", family= "Impact") +
   annotate("text", x = 16, y = 2026, hjust = 1, vjust = 1, label = "?", size = 15, color = "white", family= "Impact") + 
   annotate("text", x = 19, y = 2027, hjust = 1, vjust = 1, label = "?", size = 15, color = "seashell3", family= "Impact") + 
-  annotate("text", x = 10, y = 2025, hjust = 1, vjust = 1, label = "Number of records by year", size = 10, family= "Comic Sans MS",color = "white") + 
+  annotate("text", x = 9.5, y = 2025, hjust = 1, vjust = 1, label = "Number of records by year", size = 10, family= "Comic Sans MS",color = "white") + 
   annotate("text", x = 17.5, y = 2022, hjust = 1, vjust = 1, label = "Interesting observation:overlap in number of records obtained between earliest and later years", size= 5, family= "Comic Sans MS",color = "black") + 
   annotate("text", x = 17.5, y = 2019, hjust = 1, vjust = 1, label = "Source: Mario Kart World Records, Graphics: Thivina Thanabalan", size= 5, family= "Comic Sans MS",color = "grey48") + 
   
@@ -93,5 +93,4 @@ ggplot(df) +
   theme(plot.background = element_rect(fill = "lemonchiffon", colour=NA)) +   
   geom_image(aes(x = n, y = 2002 + h - 0.5, image = "https://www.pngkey.com/png/full/1007-10074038_bananas-transparent-mario-kart.png"), size = 0.035, by = "height") + 
   geom_image(aes(x = 1, y = 2027, image = "https://www.pngkey.com/png/full/140-1403727_super-mario-kart-png-file-mario-kart-super.png"), size = 0.1, by = "height") + 
-  ggsave(path = "TidyTuesday05-25", filename = "track.png")
-
+  ggsave(path = "png", filename = "track.png", dpi = 128, width = 15, height =8.4 )
